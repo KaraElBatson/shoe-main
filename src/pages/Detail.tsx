@@ -1,5 +1,5 @@
 import { useParams } from 'react-router';
-import data from '../mock/shoes.json';
+import data from '../data/shoes.json';
 import Info from '../components/Details/Info';
 import Types from '../components/Details/Types';
 import Sizes from '../components/Details/Sizes';

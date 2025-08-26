@@ -1,12 +1,24 @@
-import data from '../../mock/shoes.json';
+import data from '../../data/shoes.json';
 import { cn } from '../../utils';
-import { useNavigate } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 import { motion, type Variants } from 'framer-motion';
+import { useMemo } from 'react';
 
 export default function Shoes() {
+  const { search } = useLocation();
+
+  const filtered = useMemo(() => {
+    const params = new URLSearchParams(search);
+    const q = (params.get('q') ?? '').trim().toLowerCase();
+    if (!q) return data;
+    return data.filter((shoe) =>
+      [shoe.name, shoe.slug].some((v) => v.toLowerCase().includes(q)),
+    );
+  }, [search]);
+
   return (
     <div className="no-scrollbar -mr-4 flex snap-x snap-mandatory gap-18 overflow-x-auto overflow-y-hidden">
-      {data.map((shoe) => (
+      {filtered.map((shoe) => (
         <Shoe
           key={shoe.slug}
           name={shoe.name}

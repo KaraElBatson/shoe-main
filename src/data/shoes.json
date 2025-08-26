@@ -16,9 +16,9 @@
       { "label": "UK 11", "stock": true }
     ],
     "types": [
-      { "img": "/alpha-savage.png" },
-      { "img": "/nike-cygnal.png" },
-      { "img": "/air-foamposite-one.png" }
+      { "img": "/src/assets/alpha-savage.png" },
+      { "img": "/src/assets/nike-cygnal.png" },
+      { "img": "/src/assets/air-foamposite-one.png" }
     ]
   },
   {

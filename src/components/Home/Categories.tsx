@@ -1,4 +1,4 @@
-import categories from '../../mock/categories.json';
+import categories from '../../data/categories.json';
 import { cn } from '../../utils';
 
 export default function Categories() {

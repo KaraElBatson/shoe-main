@@ -1,4 +1,4 @@
-import data from '../../mock/options.json';
+import data from '../../data/options.json';
 
 export default function Options() {
   return (

@@ -26,6 +26,6 @@ server: {
 ## Ekran Görüntüleri
 
 <div style="display: flex; gap: 32px; flex-wrap: wrap;">
-  <img src="public/screenshots/home-page.png" alt="Home Page" width="300"/>
-  <img src="public/screenshots/details-page.png" alt="Details Page" width="300"/>
+  <img src="src/assets/home-page.png" alt="Home Page" width="300"/>
+<img src="src/assets/details-page.png" alt="Details Page" width="300"/>
 </div>
