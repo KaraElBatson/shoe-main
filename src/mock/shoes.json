@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Alpha Savage",
+    "slug": "alpha-savage",
+    "price": "₺8.895",
+    "img": "/alpha-savage.png",
+    "bgColor": "#e34c4d",
+    "theme": "dark",
+    "description": "Alpha Savage keeps it sharp and stylish. A timeless design built to turn heads on and off the court.",
+    "sizes": [
+      { "label": "UK 6", "stock": false },
+      { "label": "UK 7", "stock": true },
+      { "label": "UK 8", "stock": true },
+      { "label": "UK 9", "stock": false },
+      { "label": "UK 10", "stock": true },
+      { "label": "UK 11", "stock": true }
+    ],
+    "types": [
+      { "img": "/alpha-savage.png" },
+      { "img": "/nike-cygnal.png" },
+      { "img": "/air-foamposite-one.png" }
+    ]
+  },
+  {
+    "name": "Jordan Spizike Low",
+    "slug": "jordan-spizike-low",
+    "price": "₺11.897",
+    "img": "/jordan-spizike-low.png",
+    "bgColor": "#0284c7",
+    "theme": "dark",
+    "description": "In the game's crucial moments, Jordan Spizike Low delivers comfort and speed. Its fluid design makes every step feel unstoppable.",
+    "sizes": [
+      { "label": "UK 6", "stock": true },
+      { "label": "UK 7", "stock": false },
+      { "label": "UK 8", "stock": true },
+      { "label": "UK 9", "stock": true },
+      { "label": "UK 10", "stock": false },
+      { "label": "UK 11", "stock": true }
+    ],
+    "types": [
+      { "img": "/jordan-spizike-low.png" },
+      { "img": "/nike-air-max-plus.png" },
+      { "img": "/nike-cygnal.png" }
+    ]
+  },
+  {
+    "name": "Nike Cygnal",
+    "slug": "nike-cygnal",
+    "price": "₺12.995",
+    "img": "/nike-cygnal.png",
+    "bgColor": "#fbba60",
+    "theme": "light",
+    "description": "Classic heritage meets modern game. Nike Cygnal dominates the court and the streets with fearless energy.",
+    "sizes": [
+      { "label": "UK 6", "stock": true },
+      { "label": "UK 7", "stock": true },
+      { "label": "UK 8", "stock": false },
+      { "label": "UK 9", "stock": true },
+      { "label": "UK 10", "stock": true },
+      { "label": "UK 11", "stock": false }
+    ],
+    "types": [
+      { "img": "/nike-cygnal.png" },
+      { "img": "/nike-air-max-plus.png" },
+      { "img": "/air-foamposite-one.png" }
+    ]
+  },
+  {
+    "name": "Nike Air Max Plus",
+    "slug": "nike-air-max-plus",
+    "price": "₺9.499",
+    "img": "/nike-air-max-plus.png",
+    "bgColor": "#4fa3f7",
+    "theme": "dark",
+    "description": "Sleek design meets everyday comfort. Nike Air Max Plus keeps you moving in style.",
+    "sizes": [
+      { "label": "UK 6", "stock": true },
+      { "label": "UK 7", "stock": false },
+      { "label": "UK 8", "stock": true },
+      { "label": "UK 9", "stock": true },
+      { "label": "UK 10", "stock": false },
+      { "label": "UK 11", "stock": true }
+    ],
+    "types": [{ "img": "/nike-air-max-plus.png" }, { "img": "/air-foamposite-one.png" }]
+  },
+  {
+    "name": "Jordan Tatum",
+    "slug": "jordan-tatum",
+    "price": "₺11.299",
+    "img": "/jordan-tatum.png",
+    "bgColor": "#cbd5e1",
+    "theme": "light",
+    "description": "Bold style and superior cushioning. Jordan Tatum stands out on every street and track.",
+    "sizes": [
+      { "label": "UK 6", "stock": true },
+      { "label": "UK 7", "stock": true },
+      { "label": "UK 8", "stock": true },
+      { "label": "UK 9", "stock": false },
+      { "label": "UK 10", "stock": true },
+      { "label": "UK 11", "stock": true }
+    ],
+    "types": [{ "img": "/jordan-tatum.png" }, { "img": "/nike-air-max-plus.png" }]
+  }
+]

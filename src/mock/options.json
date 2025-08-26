@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Tatum 3 \"Tie Dye\"",
+    "price": "₺6.899",
+    "img": "/jordan-tatum.png"
+  },
+  {
+    "name": "Nike Air Max Plus",
+    "price": "₺10.999",
+    "img": "/nike-air-max-plus.png"
+  },
+  {
+    "name": "Air Foamposite One",
+    "price": "₺10.999",
+    "img": "/air-foamposite-one.png"
+  },
+  {
+    "name": "Jordan Tatum",
+    "price": "₺11.299",
+    "img": "/jordan-tatum.png"
+  },
+  {
+    "name": "Nike Air Max Plus",
+    "price": "₺9.499",
+    "img": "/nike-air-max-plus.png"
+  }
+]
