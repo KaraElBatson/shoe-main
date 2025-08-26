@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+button,
+a {
+  transition: transform 150ms;
+  cursor: pointer;
+}
+
+button:active,
+a:active {
+  transform: scale(0.97);
+}
