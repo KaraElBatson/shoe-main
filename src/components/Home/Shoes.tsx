@@ -1,5 +1,5 @@
 import data from '../../data/shoes.json';
-import { cn } from '../../utils';
+import { cn, matchesParsedSearch, parseSearchQuery } from '../../utils';
 import { useLocation, useNavigate } from 'react-router';
 import { motion, type Variants } from 'framer-motion';
 import { useMemo } from 'react';
@@ -9,11 +9,18 @@ export default function Shoes() {
 
   const filtered = useMemo(() => {
     const params = new URLSearchParams(search);
-    const q = (params.get('q') ?? '').trim().toLowerCase();
-    if (!q) return data;
-    return data.filter((shoe) =>
-      [shoe.name, shoe.slug].some((v) => v.toLowerCase().includes(q)),
-    );
+    const q = (params.get('q') ?? '').trim();
+    const cat = (params.get('cat') ?? '').trim().toLowerCase();
+    // start from all data, then apply category and search in sequence
+    let list = data as typeof data;
+    if (cat) {
+      list = list.filter((shoe) =>
+        [shoe.name, shoe.slug].some((v) => String(v).toLowerCase().includes(cat)),
+      );
+    }
+    if (!q) return list;
+    const parsed = parseSearchQuery(q);
+    return list.filter((shoe) => matchesParsedSearch(shoe, parsed));
   }, [search]);
 
   return (

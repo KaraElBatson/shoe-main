@@ -1,4 +1,5 @@
 import { useParams } from 'react-router';
+import { useState } from 'react';
 import data from '../data/shoes.json';
 import Info from '../components/Details/Info';
 import Types from '../components/Details/Types';
@@ -14,6 +15,7 @@ const pageVariants: Variants = {
 export default function Detail() {
   const { slug } = useParams();
   const shoe = data.find((s) => s.slug === slug);
+  const [selectedSize, setSelectedSize] = useState<string | null>(null);
 
   if (!shoe) {
     return <div>Product not found</div>;
@@ -39,9 +41,14 @@ export default function Detail() {
 
       <Info description={shoe.description} name={shoe.name} price={shoe.price} />
       <Types types={shoe.types} />
-      <Sizes sizes={shoe.sizes} />
+      <Sizes sizes={shoe.sizes} selected={selectedSize} onSelect={setSelectedSize} />
 
-      <button className="w-full rounded-xl bg-gray-800 p-4 text-white">Add to Bag</button>
+      <button
+        className="w-full rounded-xl bg-gray-800 p-4 text-white disabled:cursor-not-allowed disabled:opacity-60"
+        disabled={!selectedSize}
+      >
+        {selectedSize ? `Add size ${selectedSize} to Bag` : 'Add to Bag'}
+      </button>
     </motion.div>
   );
 }
