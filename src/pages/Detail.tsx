@@ -35,7 +35,7 @@ export default function Detail() {
         layoutId={`${slug}-bg-color`}
       />
 
-      <div className="z-50 flex h-64 items-end justify-center">
+      <div className="z-50 flex h-64 items-end justify-center relative">
         <motion.img layoutId={slug} src={shoe.img} className="mb-8 w-80 md:w-96" />
       </div>
 
